@@ -1,0 +1,101 @@
+<html>
+<head>
+    <title>My Server Web Page</title>
+
+</head>
+<style>
+    div {
+        box-sizing: border-box;
+    }
+    .header {
+        position: relative;
+        width: 100%;
+        background-color: #bbbbbb;
+        font-size: 45px;
+        height: 60px;
+    }
+    .logo {
+        width: 80px;
+        margin-left: 10px;
+        height: inherit;
+    }
+   .mainheader {
+       position: absolute;
+       left: 40%;
+       align: center;
+       font-size: 45px;
+       color: white;
+
+   }
+   .page {
+       margin-top: 20px;
+       width: 70%;
+       background: #ddddee;
+       min-height: 800px;
+       font-size: 20px;
+       font-family: Verdana, Geneva, Tahoma, sans-serif;
+       padding: 20px;
+   }
+   .sidebar {
+       background: #ddddee;
+       min-height: 800px;
+       width: 28%;
+       margin: 20px 0px 0px 2%;
+       position: absolute;
+       right: 0px;
+       top: 70px;
+       font-size: 15px;
+       font-family: Verdana, Geneva, Tahoma, sans-serif;
+       padding: 20px;
+   }
+</style>
+<body>
+<div class="header">
+<img src="/server.ico" alt="My Server logo" class="logo">
+<span class="mainheader">MyServer</span>
+</div>
+
+<div class="page">
+    <img src="/myserver.ico" style="margin-left: 25% ;" width="50%" height="200px" alt=""><br>
+<b>Hello Users,</b> <br><br>
+     The setup has been completed successfully . <br> To start using MyServer just go through the folder where you installed the 
+     MyServer application and move to htdocs.<br> Paste your html , css , js, php files there and open the MyServer application
+     Once you opened the MyServer application <br>Start the server by clicking the Start button
+     The Log will notify you that the server has been started. <br>
+     Go through the browser by clicking on OpenBrowser button on the right of the start server button 
+     The default browser of your system will open. <br>
+     type the url you want to load by adding a slash after the localhost:portno/yourdestination <br><br><br><br>
+     ... Bingo Your MyServer setup has completed enjoy using MyServer..  <br>
+     <br><br><br><br>
+     For any queries and suggestion feel free to mail me on <a href="mailto: vishalkrsinghmsk@gmail.com?Subject=myserver"
+                                                               target = "_blank">vishalkrsinghmsk@gmail.com </a>  <br>Sweet love from my side . <br><br><br><br>
+    Regards <br>
+    Vishal .. <br> Hope you enjoy the server <br>
+</div>
+<div class="sidebar">
+
+<ul>
+
+
+    <li><b>Q1. Where the file must be kept ?</b></li><br>
+    <li>Ans:  The file must be kept in htdocs folder where the MyServer application is installed. <br>
+    If you didn't change the path on the installation time by default iy is kept C:/MyServer/htdocs 
+    Go through the location and paste your webpages inside htdocs folder . 
+    
+    </li><br>
+    <li><b>Q2. How Can I change the port no of server ?</b></li><br>
+    <li>Ans: In your application folder Open config.json in any text editor and change the port no to your 
+        desired server address. We recommend you to do not change the port number but if you are running multiple servers at a same time then you should change it accordingly.. 
+
+    </li><br>
+    <li><b>Q3. What is default port of my server ?</b></li><br>
+    <li>By default the port number 80 is assigned to MyServer. You can change it on config.json file</li><br>
+    <li><b>Q4. Why My server is not connecting to my database?</b></li><br>
+    <li>Ans: Currently MyServer doesn't support database connections and we are not working in that way.
+        Sorry for inconveince but it can only execute php and deliever static files.
+    Since mysql is not supported so mysqli functions can throw exceptions </li><br>
+</ul>
+</div>
+</body>
+
+</html>
